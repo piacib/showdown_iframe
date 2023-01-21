@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Pokemon Showdown Iframe",
+  "version": "1.0",
+  "description": "Add an Iframe to pokemon showdown battles",
+  "icons": {},
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "js": ["scripts/content.js"],
+      "matches": ["https://play.pokemonshowdown.com/*"]
+    }
+  ]
+}
